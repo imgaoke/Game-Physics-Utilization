@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "outDir": "../public/js",
+        "types": [
+            "requirejs",
+            "phaser"
+        ],
+        "module": "AMD",
+        "sourceMap": true
+    },
+    "include": [
+        "../src/**/*.ts"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clear-editor-history",
+            "command": "${command:workbench.action.clearEditorHistory}"
+        },
+        {
+            "type": "typescript",
+            "tsconfig": "tsconfigs/tsconfig.debug.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": "build",
+            "label": "tsc: build - tsconfigs/tsconfig.debug.json"
+        },
+        {
+            "label": "PreLaunch",
+            "dependsOn": [
+                "clear-editor-history",
+                "tsc: build - tsconfigs/tsconfig.debug.json"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost/13-ninja-rope/public/index.html",
+            "webRoot": "${workspaceFolder}/..",
+            "trace": true,
+            "preLaunchTask": "PreLaunch",
+            //"runtimeArgs": ["-incognito", "--aggressive-cache-discard", "--new-window", "--start-maximized", "--disk-cache-dir=null"]
+            //"runtimeArgs": [" "]
+            "runtimeArgs": ["--aggressive-cache-discard", "--disk-cache-dir=null"]
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "Launch Firefox against localhost",
+            "url": "http://localhost/13-ninja-rope/public/index.html",
+            "webRoot": "${workspaceFolder}/..",
+            "trace": true,
+            "file": "${workspaceFolder}/public/index.html"
+        }
+    ]
+}

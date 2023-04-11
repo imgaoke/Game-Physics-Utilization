@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "outDir": "../public/js",
+        "types": [
+            "requirejs",
+            "phaser"
+        ]
+    },
+    "include": [
+        "../src/**/*.ts"
+    ]
+}
